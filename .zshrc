@@ -56,14 +56,14 @@ umask 022
 case "${OSTYPE}" in
 freebsd*|darwin*)
   alias ls="ls -GFa"
+	alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+	alias mvim='$HOME/shellscripts/mvim.sh'
   ;;
 linux*)
   alias ls="ls -Fa --color"
   ;;
 esac
 alias ll='ls -Fal'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias mvim='$HOME/shellscripts/mvim.sh'
 alias apres='sudo /Applications/XAMPP/xamppfiles/xampp restartapache'
 alias killds='find . -name "*.DS_Store" -type f -delete'
 alias killthumbs='find . -name "Thumbs.db" -type f -delete'

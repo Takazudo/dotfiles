@@ -13,7 +13,7 @@ set fileencoding=utf-8
 :endif
 
 "load colorscheme
-colorscheme koehler
+colorscheme biogoo
 
 " never make backup/swap
 set nobackup
@@ -432,8 +432,8 @@ com! Marked call g:OpenMarked()
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_guide_size = 2
 let g:indent_guides_enable_on_vim_startup = 1
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guifg=#000000 guibg=#2A2A2A ctermbg=4
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guifg=#000000 guibg=#343434 ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guifg=#000000 guibg=#2A2A2A ctermbg=233
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guifg=#000000 guibg=#343434 ctermbg=235
 
 " syntastic
 "let g:syntastic_mode_map = { 'mode': 'active',
