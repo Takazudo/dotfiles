@@ -1,0 +1,14 @@
+{
+  "globalstrict": true,
+  "strict": false,
+  "predef": ["_", "Backbone", "moment"],
+  "browser": true,
+  "laxcomma": true,
+  "sub": true,
+  "laxbreak": true,
+  "node": true,
+  "es5": true,
+  "devel": true,
+  "immed": false,
+	"regexp": false
+}

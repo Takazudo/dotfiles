@@ -1,0 +1,23 @@
+[include]
+		path = .gitconfig.local
+[color]
+	ui = true
+	status = auto
+	diff = auto
+	branche = auto
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	l  = log --date=iso -10
+[core]
+	excludefile = ~/.gitexclude
+	excludesfile = /Users/Takazudo/.gitignore_global
+	precomposeunicode = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
