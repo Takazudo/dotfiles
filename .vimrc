@@ -213,8 +213,8 @@ augroup END
 " php
 autocmd MyAutoCmd BufNewFile,BufReadPost *.php set filetype=php
 
-" .mt, .tt is html
-autocmd MyAutoCmd BufNewFile,BufReadPost *.mt,*.mtml,*.tt,*.html.erb set filetype=html
+" html
+autocmd MyAutoCmd BufNewFile,BufReadPost *.mt,*.mtml,*.tt,*.html.erb,*.hbs set filetype=html
 
 "psgiとtはperl
 autocmd MyAutoCmd BufNewFile,BufReadPost *.psgi,*.t set filetype=perl
