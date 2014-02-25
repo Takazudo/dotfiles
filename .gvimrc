@@ -97,3 +97,5 @@ inoremap <ESC> <ESC>:set iminsert=1<CR>:set iminsert=0<CR>
 " transparent window
 set transparency=7
 
+" set swap file directory
+set directory=~/.vimswapfiles
