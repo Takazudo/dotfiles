@@ -117,8 +117,13 @@ if [[ -f ~/.nvm/nvm.sh ]]; then
   fi
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# rvm
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 alias rake="noglob rake"
 
