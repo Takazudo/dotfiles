@@ -64,7 +64,7 @@ linux*)
   ;;
 esac
 alias ll='ls -Fal'
-alias apres='sudo /Applications/XAMPP/xamppfiles/xampp restartapache'
+alias apres='sudo /Applications/XAMPP/xamppfiles/xampp reloadapache'
 alias killds='find . -name "*.DS_Store" -type f -delete'
 alias killthumbs='find . -name "Thumbs.db" -type f -delete'
 alias devpochi='sudo dev_appserver.py --address=192.168.218.1 --datastore_path=pochi.db --port=80 pochi'
