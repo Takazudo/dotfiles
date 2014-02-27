@@ -73,6 +73,7 @@ alias fiddle='cp ~/dev/emptyfiddle/* ./'
 alias cof='coffee'
 alias cofpile='coffee --compile'
 alias putcake='cp ~/Dropbox/utils/node/Cakefile ./'
+alias be='bundle exec'
 
 #svn
 alias svnadd="svn st | grep '^?' | awk '{ print \$2 }' | xargs svn add"
