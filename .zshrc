@@ -64,6 +64,7 @@ linux*)
   ;;
 esac
 alias ll='ls -Fal'
+alias apst='sudo /Applications/XAMPP/xamppfiles/xampp startapache'
 alias apres='sudo /Applications/XAMPP/xamppfiles/xampp reloadapache'
 alias killds='find . -name "*.DS_Store" -type f -delete'
 alias killthumbs='find . -name "Thumbs.db" -type f -delete'
