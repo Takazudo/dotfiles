@@ -216,6 +216,15 @@ autocmd MyAutoCmd BufNewFile,BufReadPost *.php set filetype=php
 " html
 autocmd MyAutoCmd BufNewFile,BufReadPost *.mt,*.mtml,*.tt,*.html.erb,*.hbs set filetype=html
 
+" css
+autocmd MyAutoCmd BufNewFile,BufReadPost *.css set filetype=css
+
+" scss
+autocmd MyAutoCmd BufNewFile,BufReadPost *.scss set filetype=scss
+
+" sass
+autocmd MyAutoCmd BufNewFile,BufReadPost *.sass set filetype=sass
+
 "psgiとtはperl
 autocmd MyAutoCmd BufNewFile,BufReadPost *.psgi,*.t set filetype=perl
 
@@ -240,6 +249,9 @@ set nocindent
 autocmd FileType php set indentexpr&
 autocmd FileType html set indentexpr&
 autocmd FileType xhtml set indentexpr&
+autocmd FileType css set indentexpr&
+autocmd FileType scss set indentexpr&
+autocmd FileType sass set indentexpr&
 autocmd FileType javascript set indentexpr&
 autocmd FileType ruby set indentexpr&
 autocmd FileType coffee set indentexpr&
@@ -442,3 +454,9 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guifg=#000000 guibg=#343434 
 ""let g:syntastic_auto_loc_list = 1
 "let g:syntastic_javascript_checker = 'jshint'
 
+
+" indent keep
+" http://yakinikunotare.boo.jp/orebase2/vim/dont_delete_blank_line_indent
+nnoremap o oX<C-h>
+nnoremap O OX<C-h>
+inoremap <CR> <CR>X<C-h>
